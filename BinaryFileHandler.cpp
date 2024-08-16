@@ -117,8 +117,8 @@ int main() {
         }
         Header header = { "DATA", 1, 2 };
         file.write(reinterpret_cast<const char*>(&header), sizeof(header));
-        Data record1 = { 1, "Alice" };
-        Data record2 = { 2, "Bob" };
+        Data record1 = { 1, "Jean" };
+        Data record2 = { 2, "John" };
         file.write(reinterpret_cast<const char*>(&record1), sizeof(record1));
         file.write(reinterpret_cast<const char*>(&record2), sizeof(record2));
 
